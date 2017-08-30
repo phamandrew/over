@@ -1,0 +1,49 @@
+@import "variables";
+
+.blog {
+	margin: 5% 0;
+}
+
+.blog-container {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 5%;
+	.blog-article {
+		width: calc(33.3% - (15px * 2) / 3);
+		margin-right: 15px;
+		
+		&:last-of-type {
+			margin-right: 0;
+		}
+		img {
+			width: 100%;
+		}
+		p, h3, a {
+			text-align: left;
+			margin: 0;
+		}
+
+		p {
+			font-size: .8rem;
+		}
+
+		h3 {
+			font-size: 1rem;
+			margin: 6px 0;
+		}
+
+		a {
+			font-size: .9rem;
+			color: $black;
+			border-bottom: 1px solid black;
+			text-align: left;
+			float: left;
+			&:hover {
+				border-bottom: 2px solid black;
+			}
+		}
+
+	}
+}

@@ -1,0 +1,227 @@
+@import "../partials/variables";
+
+.plants {
+	margin: 5% 0;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.plants-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	.plants-title {
+		background-image: url(../assets/leaf.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		h3 {
+			font-weight: 400;
+			font-size: 1.9rem;
+			color: $green;
+			margin-bottom: 0;
+		}
+		h2 {
+			font-weight: 400;
+			margin: 0 0 12px 0;
+			font-size: 2.3rem;
+		}
+	}
+
+	p {
+		margin: 2% auto;
+		// font-size: 1rem;
+	}
+
+	.plants-author {
+		display: flex;
+		flex-direction: row;
+		margin: 3% 0 8% 0;
+
+		p {
+			text-align: left;
+			font-style: italic;
+			margin: 0 auto;
+			text-align: center;
+			font-size: 1rem;
+			
+			.black {
+				font-style: normal;
+				color: $black;
+			}
+
+		}
+	}
+}
+
+.plants-gallery {
+	display: flex;
+	width: 100%;
+
+	.plants-gallery-left {
+		width: calc(40% - 7.5px);
+		margin-right: 7.5px;
+		position: relative;
+
+		img {
+			width: 100%;
+			height: 100%
+		}
+
+		.plants-overlay1 {
+			position: absolute;
+			z-index: 200;
+			left: calc(33%);
+			top: calc(50% - 20px);
+			background: white;
+			padding: 2px 12px;
+			width: 40%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			h3 {
+				font-weight: 400;
+				font-size: 1rem;
+				text-align: center;
+				margin: 0 auto;
+			}
+			p {
+				font-size: 0.8rem;
+				text-align: center;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.plants-gallery-right {
+		width: calc(60% - 7.5px);
+		display: flex;
+		flex-direction: column;
+		margin-left: 7.5px;
+
+		.plants-container {
+			width: 100%;
+		}
+
+		.plants-gallery-right-top {
+			display: flex;
+			flex-direction: row;
+			// margin-bottom: 15px;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 15px;
+
+			.plants-gallery-right-top-left {
+				width: calc(50% - 15px / 2);
+				position: relative;
+				&:first-child {
+					margin-right: 15px;
+				}
+				img {
+					width: 100%;
+					display: block;
+				}
+				.plants-overlay2 {
+					position: absolute;
+					z-index: 200;
+					left: calc(23%);
+					top: calc(50% - 40px);
+					background: white;
+					padding: 2px 6px;
+					width: 55%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+					h3 {
+						font-weight: 400;
+						font-size: 1rem;
+						text-align: center;
+						margin: 0 auto;
+					}
+					p {
+						font-size: 0.8rem;
+						text-align: center;
+						margin: 0 auto;
+					}
+				}
+			}
+			.plants-gallery-right-top-right {
+				width: calc(50% - 15px / 2);
+				position: relative;
+				img {
+					width: 100%;
+					display: block;
+				}
+				.plants-overlay3 {
+					position: absolute;
+					z-index: 200;
+					left: calc(23%);
+					top: calc(50% - 40px);
+					background: white;
+					padding: 2px 8px;
+					width: 55%;
+					// display: flex;
+					justify-content: center;
+					align-items: center;
+					// flex-direction: column;
+					h3 {
+						font-weight: 400;
+						font-size: 1rem;
+						text-align: center;
+						margin: 0 auto;
+					}
+					p {
+						font-size: 0.8rem;
+						text-align: center;
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+
+			.plants-gallery-right-bottom {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+
+				img {
+					width: 100%;
+				}
+
+				.plants-overlay4 {
+					position: absolute;
+					z-index: 200;
+					left: calc(35.5%);
+					top: calc(50% - 25px);
+					background: white;
+					padding: 2px 0;
+					width: 30%;
+					// display: flex;
+					// justify-content: center;
+					// align-items: center;
+					// flex-direction: column;
+					h3 {
+						font-weight: 400;
+						font-size: 1rem;
+						text-align: center;
+						margin: 0 auto;
+					}
+					p {
+						font-size: 0.8rem;
+						text-align: center;
+						margin: 0 auto;
+					}
+				}
+			}
+	}
+}
+

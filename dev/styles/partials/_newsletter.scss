@@ -1,0 +1,38 @@
+.newsletter {
+	margin: 5% 0;
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		.section-title {
+			h2 {
+				font-weight: 400;
+				font-size: 2.3rem;
+			}
+		}
+		p {
+			font-size: 1rem;
+		}
+		input {
+			width: 70%;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			font-size: 1rem;
+			margin: 7% 0;
+		}
+	}
+}
+
+.client-container {
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		li img{
+			width: 70%;
+			// height: 50%;
+		}
+	}
+}

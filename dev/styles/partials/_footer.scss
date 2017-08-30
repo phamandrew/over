@@ -1,0 +1,20 @@
+@import "variables";
+
+footer {
+	.wrapper {
+	display: flex;
+	justify-content: space-apart;
+	flex-direction: row;
+	width: 100%;
+
+	.black {
+		color: $black;
+	}
+
+
+	p {
+		width: 50%;
+		font-size: .8rem;
+	}
+}
+}

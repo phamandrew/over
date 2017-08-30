@@ -1,0 +1,438 @@
+@import "variables";
+
+// /* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+// /* Landscape phone to portrait tablet */
+@media (max-width: 900px) {
+
+	// .wrapper {
+	// 	width: 80%;
+	// }
+
+	.home .home-center {
+		margin: 30% 0 25% 0;
+
+		h2 {
+			// font-size: 1.3rem;
+		}
+		h1 {
+			// font-size: 2.2rem;
+		}
+		.home-button {
+			margin-top: 2%;
+			a {
+				// padding: 0.5rem 1.1rem;
+				// font-size: .6rem;
+				// border-radius: 2px;
+				&:hover {
+					background: white;
+					color: $pink;
+				}
+			}
+		}
+	}
+		.fullbleed {
+			display: flex;
+			flex-direction: column;
+			.fullbleed-left {
+				width: 100%;
+			}
+			.fullbleed-right {
+				width: 100%;
+			}
+		}
+
+	.wrapper {
+		width: 95%;
+	}
+
+
+	.product-gallery .products-container {
+		width: calc(50% - 8px);
+		margin-right: 8px;
+		&:nth-child(5n) {
+			margin-right: inherit;
+		}
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+		.products-image .new-special {
+			top: 9%;
+		}
+	}
+}
+
+
+// /* Landscape phones and down */
+@media (max-width: 640px) {
+	.wrapper {
+		width: 90%;
+	}
+	
+.nav-right {
+	width: 60%;
+	ul {
+		width: 100%;
+		.hamburger {
+			padding: 6px 8px;
+		}
+		li {
+			width: 33.3%;
+			a {
+				font-size: 16px;
+				padding: 16px 30%;
+				&:last-child::active {
+					display: block;
+				}
+			}
+
+		}
+	}
+}
+
+	.nav-center {
+		padding: 10px 0;
+		width: 25%;
+		margin: 0 4%;
+	}
+
+	.nav-left {
+		display: none;
+	}
+
+	.nav .wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		.nav-center {
+			margin: 0;
+		}
+	}
+
+// PRODUCTS
+
+	.products .wrapper {
+		.products-nav {
+			width: 100%;
+		}
+		.product-gallery {
+			flex-direction: column;
+			width: 100%;
+			.products-container {
+				width: 90%;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	// PLANTS
+
+	.plants-gallery {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+
+		.plants-gallery-left {
+			width: 100%;
+			margin: 0 auto;
+			position: relative;
+
+			img {
+				width: 100%;
+			}
+
+			.plants-overlay1 {
+				position: absolute;
+				// z-index: 900;
+				left: calc(33%);
+				top: calc(50% - 20px);
+				background: white;
+				padding: 2px 12px;
+				width: 40%;
+				h3 {
+					font-weight: 400;
+					font-size: 14px;
+					text-align: center;
+					margin: 0 auto;
+				}
+				p {
+					font-size: 10px;
+					text-align: center;
+					margin: 0 auto;
+				}
+			}
+		}
+
+		.plants-gallery-right {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			margin: 0 auto;
+
+			.plants-container {
+				width: 100%;
+			}
+
+			.plants-gallery-right-top {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin: 0 auto;
+				width: 100%;
+
+				.plants-gallery-right-top-left {
+					width: 100%;
+					position: relative;
+					&:first-child {
+						margin: 0 auto;
+					}
+					img {
+						width: 100%;
+						display: inline-block;
+					}
+					.plants-overlay2 {
+						position: absolute;
+						// z-index: 900;
+						left: calc(20%);
+						top: calc(50% - 20px);
+						background: white;
+						padding: 2px 12px;
+						width: 55%;
+						h3 {
+							font-weight: 400;
+							font-size: 14px;
+							text-align: center;
+							margin: 0 auto;
+						}
+						p {
+							font-size: 10px;
+							text-align: center;
+							margin: 0 auto;
+						}
+					}
+				}
+				.plants-gallery-right-top-right {
+					width: 100%;
+					position: relative;
+					img {
+						width: 100%;
+						display: inline-block;
+					}
+					.plants-overlay3 {
+						position: absolute;
+						// z-index: 900;
+						left: calc(20%);
+						top: calc(50% - 20px);
+						background: white;
+						padding: 2px 12px;
+						width: 55%;
+						h3 {
+							font-weight: 400;
+							font-size: 14px;
+							text-align: center;
+							margin: 0 auto;
+						}
+						p {
+							font-size: 10px;
+							text-align: center;
+							margin: 0 auto;
+						}
+					}
+				}
+			}
+
+				.plants-gallery-right-bottom {
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					position: relative;
+
+					img {
+						width: 100%;
+					}
+
+					.plants-overlay4 {
+						position: absolute;
+						// z-index: 900;
+						left: calc(35.5%);
+						top: calc(50% - 20px);
+						background: white;
+						padding: 2px 0;
+						width: 30%;
+						h3 {
+							font-weight: 400;
+							font-size: 14px;
+							text-align: center;
+							margin: 0 auto;
+						}
+						p {
+							font-size: 10px;
+							text-align: center;
+							margin: 0 auto;
+						}
+					}
+				}
+		}
+	}
+
+
+
+	// CONTACT 
+
+	.contact .wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+
+		h3 {
+			font-size: 22px;
+		}
+
+		.contact-info {
+			display: flex;
+			flex-direction: column;
+			width: 90%;
+			margin: 5% auto;
+
+				img {
+					width: 90%;
+					margin: 0 auto;
+				}
+				p {
+					line-height: 24px;
+					margin: 5% auto;
+				}
+				p, li {
+					width: 90%;
+					text-align: left;
+					color: $grey;
+					margin: 5% auto;
+					line-height: 24px;
+					a {
+						color: $grey;
+						&:hover {
+							color: $black;
+						}
+					}
+				}
+
+				.contact-black {
+					color: $black;
+					font-weight: 500;
+				}
+			.contact-social ul {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				width: 90%;
+				margin: 0 auto;
+				i {
+					font-size: 22px;
+				}
+			}
+		}
+		.contact-links {
+			display: flex;
+			flex-direction: column;
+			width: 81%;
+			text-align: left;
+			margin: 5% auto;
+
+			a {
+				color: $grey;
+				font-size: 18px;
+
+				&:hover {
+					color: $black;
+				}
+			}
+			li {
+				line-height: 38px;
+			}
+		}
+		.contact-ig {
+			display: flex;
+			flex-direction: column;
+			width: 90%;
+
+			.contact-gallery ul{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			width: 100%;
+				li {
+					width: calc(50% - 8px /2);
+					margin-top: 4px;
+					margin-bottom: 4px;
+					padding: 0;
+					margin-right: 8px;
+
+				&:nth-child(2n) {
+					margin-right: 0;
+					padding: 0;
+						}
+				&:nth-child(3n) {
+					margin-right: 8px;
+				}
+				&:nth-child(6n) {
+					margin-right: 0;
+				}
+					img {
+						width: 100%;
+						display: block;
+					}
+				}
+			}
+			.contact-payment ul{
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			margin: 5% auto;
+				li {
+					width: 100%;
+					margin: 0 auto;
+					&:last-child {
+						margin-right: 0;
+					}
+					// margin-right: 6px;
+					// &:last-child {
+					// 	margin-right: 0;
+					// }
+					img {
+						width: 45%;
+					}
+				}
+			}
+		}
+
+	}
+
+
+
+
+
+// FULLBLEED
+
+.fullbleed-right .fullbleed-right-content {
+	margin: 30% 0;
+}
+
+
+// BLOG
+
+.blog .blog-container {
+	flex-direction: column;
+	width: 90%;
+	margin: 5% auto;
+	.blog-article {
+		width: 100%;
+		margin-bottom: 5%;
+	}
+}
+}

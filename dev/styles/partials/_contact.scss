@@ -1,0 +1,150 @@
+// @import "variables";
+
+.contact {
+	border-top: 1px solid $grey;
+	border-bottom: 1px solid $grey;
+	font-size: .8rem;
+	line-height: 24px;
+	padding: 5% 0;
+	margin: 5% 0 0 0;
+
+	h3 {
+		font-size: 1rem;
+		font-weight: 400;
+		text-align: left;
+		margin: 0;
+		position: relative;
+		}
+		.contact-links .contact-title {
+
+			margin: 0;
+
+		}
+		.line {
+			width: 30px;
+			border-bottom: 1px solid $green;
+			margin-bottom: 5%;
+		}
+
+	}
+
+
+.contact .wrapper {
+	display: flex;
+	flex-direction: row;
+	.contact-info {
+		display: flex;
+		flex-direction: column;
+		width: 40%;
+		// color: $grey;
+
+			img {
+				width: 33.3%;
+			}
+			p {
+				line-height: 1.2rem;
+				margin: 6% 0 0 0;
+				width: 95%;
+				text-align: left;
+				font-size: .8rem;
+				color: $grey;
+				// font-size: .8rem;
+			}
+			li {
+				width: 95%;
+				text-align: left;
+				font-size: .8rem;
+				margin: 2% 0;
+				a {
+					color: $grey;
+					&:hover {
+						color: $black;
+					}
+				}
+			}
+
+			.contact-black {
+				color: $black;
+				font-weight: 500;
+			}
+		.contact-social ul {
+			display: flex;
+			flex-direction: row;
+			width: 50%;
+			li {
+				margin-right: 15%;
+			}
+			i {
+				font-size: 1.1rem;
+			}
+		}
+	}
+	.contact-links {
+		display: flex;
+		flex-direction: column;
+		width: 15%;
+		text-align: left;
+		margin: 0 0 0 15px;
+		ul {
+			li {
+				margin: 5% 0;
+			}
+
+			a {
+				color: $grey;
+				font-size: .8rem;
+				&:hover {
+					color: $black;
+				}
+			}
+		}
+	}
+	.contact-ig {
+		display: flex;
+		flex-direction: column;
+		width: 30%;
+		margin-left: 15px;
+
+		.contact-title {
+			margin: 0;
+		}
+		.contact-gallery ul{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		// margin: 3% 0;
+			li {
+				width: calc(33.3% - 12px / 3);
+				margin-right: 6px;
+			&:nth-child(3n) {
+				margin-right: 0;
+					}
+				img {
+					width: 100%;
+				}
+			}
+		}
+		.contact-payment ul{
+		display: flex;
+		width: 75%;
+		justify-content: space-between;
+		margin: 5% 0;
+			li {
+				width: calc(20% - 32px / 5);
+				margin-right: 8px;
+				&:last-child {
+					margin-right: 0;
+				}
+				// margin-right: 6px;
+				// &:last-child {
+				// 	margin-right: 0;
+				// }
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+}
