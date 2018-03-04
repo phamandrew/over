@@ -252,7 +252,7 @@ nav {
   text-align: center;
   padding: 12px; }
 
-.nav-left-hidden {
+.mobile-nav {
   display: none;
   position: absolute;
   top: 0;
