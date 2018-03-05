@@ -23,7 +23,7 @@
 				</ul>
 			</div>
 
-			<div class="nav-left-hidden">
+			<div id="flyoutMenu">
 				<ul>
 					<li><a href="#home">Home</a></li>
 					<li><a href="#plants">About</a></li>
@@ -440,26 +440,6 @@
 <!-- HAMBURGER MENU SCRIPT -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script>
-	$(function(){
-		$('.hamburger').on('click', function(){
-			
-
-			// $('.nav-left').toggleClass('overlay');
-
-
-			// $('.nav-left').toggleClass('show');
-
-			$('.nav-left-hidden').toggle('');
-		});
-
-		$('.nav-left-hidden ul li a').on('click', function(){	    		
-
-			// $('.nav-left').removeClass('overlay');
-
-			$('.nav-left-hidden').toggle('');
-		});
-	});
-</script>
+<script src="./public/scripts/script.js"></script>
 </body>
 </html>
