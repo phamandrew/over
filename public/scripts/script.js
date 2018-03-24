@@ -1,23 +1,42 @@
-
-
 var didScroll;
 var lastScrollTop = 0;
 var delta = 5;
 var navbarHeight = $('header').outerHeight();
 
 
+// on scroll, let interval know that scroll has occurred
+
 $(window).scroll(function(event){
 	didScroll = true;
-
-	$('.projects').each(function(i){
-		var bottomElement = $(this).position().top + $(this).outerHeight();
-		var bottomWindow = $(window).scrollTop() + $(window).height();
-
-		if (bottomWindow > bottomElement - 200){
-			$(this).animate({'opacity':'1'},1000);
-		}
-	});
 });
+
+// run hasScrolled() and reset didScroll status
+
+setInterval(function(){
+	if (didScroll) {
+		hasScrolled();
+		didScroll = false;
+	}
+}, 250);
+
+
+function hasScrolled(){
+	var scrollTop = $(this).scrollTop();
+
+	if(Math.abs(lastScrollTop - scrollTop) <= delta)
+		return;
+
+	if(scrollTop > lastScrollTop && scrollTop > navbarHeight){
+		$('nav').removeClass('nav-down').addClass('nav-up');
+	}
+	else{
+		if (scrollTop + $(window).height() < $(document).height()){
+			$('nav').removeClass('nav-up').addClass('nav-down');
+		}
+	}
+
+	lastScrollTop = scrollTop;
+}
 
 	// Smooth Scroll
 
@@ -27,7 +46,7 @@ $(document).ready(function(){
 		var linkHref = $(this).attr('href');
 
 		$('html, body').animate({
-			scrollTop: $(linkHref).offset().top;
+			scrollTop: $(linkHref).offset().top
 		}, 1500);
 
 		e.preventDefault();
@@ -48,26 +67,5 @@ function showMenu(e) {
 	flyoutMenu.classList.toggle("show");
 	hamburgerCollapse.classList.toggle("is-active");
 }
-
-// NAV HIDE
-
-function hasScrolled(){
-	var scrollTop = $(this).scrollTop();
-
-	if(Math.abs(lastScrollTop - scrollTop) <= delta)
-		return;
-
-	if(scrollTop > lastScrollTop && scrollTop > navbarHeight){
-		$('header').removeClass('nav-down').addClass('nav-up');
-	}
-	else{
-		if (scrollTop + $(window).height() < $(document).height()){
-			$('header').removeClass('nav-up').addClass('nav-down');
-		}
-	}
-
-	lastScrollTop = scrollTop;
-}
-
 
 

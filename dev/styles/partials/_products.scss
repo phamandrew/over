@@ -1,4 +1,4 @@
-@import "variables";
+
 
 .product {
 	margin: 5% 0;
@@ -72,6 +72,7 @@
 		.products-image {
 			position: relative;
 			height: auto;
+			transition: all 5s ease-in-out;
 
 			img {
 				// width: 277.5px;
@@ -88,6 +89,8 @@
 				position: absolute;
 				top: 0;
 				bottom: 0;
+				opacity: 1;
+				transition: all 0.3s ease-in-out;
 				background-color: rgba(0, 0, 0, 0.5);
 			}
 			.new {
@@ -132,7 +135,9 @@
 		}
 
 		.overlay {
-			display: none;
+			opacity: 0;
+			background-color: rgba(0, 0, 0, 0);
+			transition: all 0.3s ease-in-out;
 
 			a {
 				text-decoration: none;
@@ -144,9 +149,8 @@
 				width: 70%;
 				top: calc(50% - 10px);
 				left: calc(50% - 35%);
-				transition: all 0.5s;
+				transition: all 0.3s;
 				&:hover {
-					
 					color: $pink;
 				}
 			}
@@ -172,7 +176,6 @@
 		}
 	}
 }
-
 
 
 .products-image:after {

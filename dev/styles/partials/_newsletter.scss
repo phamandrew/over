@@ -1,10 +1,13 @@
+// @import "variables";
+
 .newsletter {
-	margin: 5% 0;
-	.wrapper {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+	// margin: 5% 0;
+	// .wrapper {
+	// 	margin: 100px auto;
+		// display: flex;
+		// flex-direction: column;
+		// justify-content: center;
+		// align-items: center;
 		.section-title {
 			h2 {
 				font-weight: 400;
@@ -22,7 +25,7 @@
 			font-size: 1rem;
 			margin: 7% 0;
 		}
-	}
+	// }
 }
 
 .client-container {
@@ -31,8 +34,12 @@
 		flex-direction: row;
 		justify-content: space-between;
 		li img{
-			width: 70%;
+			width: 80%;
+			transition: all 0.2s ease-in-out;
 			// height: 50%;
+			&:hover {
+				transform: scale(1.8, 1.8);
+			}
 		}
 	}
 }

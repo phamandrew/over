@@ -1,11 +1,12 @@
-@import "variables";
+// @import "variables";
 
 footer {
 	.wrapper {
-	display: flex;
-	justify-content: space-apart;
-	flex-direction: row;
-	width: 100%;
+		padding: 0;
+		display: flex;
+		justify-content: space-apart;
+		flex-direction: row;
+		width: 100%;
 
 	.black {
 		color: $black;
