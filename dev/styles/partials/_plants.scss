@@ -14,6 +14,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+	// margin: 50px 0;
 
 	.plants-title {
 		background-image: url(../assets/leaf.png);
@@ -29,13 +31,13 @@
 		}
 		h2 {
 			font-weight: 400;
-			margin: 0 0 12px 0;
+			// margin: 0 0 12px 0;
 			font-size: 2.3rem;
 		}
 	}
 
 	p {
-		margin: 2% auto;
+		// margin: 2% auto;
 		// font-size: 1rem;
 	}
 
@@ -60,7 +62,11 @@
 	}
 }
 
-
+.hover-overlay {
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0);
+	transition: all 0.3s ease-in-out;
+}
 
 .plants-gallery {
 	display: flex;
@@ -71,28 +77,31 @@
 		margin-right: 7.5px;
 		position: relative;
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		// justify-content: center;
+		// align-items: center;
+
+		&:hover .hover-overlay {
+			display: block;
+			z-index: 200;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			opacity: 1;
+			transition: all 0.3s ease-in-out;
+			background-color: rgba(0, 0, 0, 0.5);
+		}
 
 
 		img {
-			width: 100%;
-			height: 100%
+    		display: block;
+    		width: 100%;
+    		// margin:0;
+    		// vertical-align: bottom;
 		}
+		
 
-		.hover-overlay {
-			display: none;
-		}
-		&:hover .hover-overlay {
-				// display: block;
-				position: absolute;
-				z-index: 50;
-				width: 100%;
-				height: 100%;
-				top: 0;
-				bottom: 0;
-				background-color: rgba(0, 0, 0, 0.5);
-		}
 
 		.plants-overlay1 {
 			position: absolute;
@@ -144,6 +153,18 @@
 				&:first-child {
 					margin-right: 15px;
 				}
+				&:hover .hover-overlay {
+					display: block;
+					z-index: 200;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					opacity: 1;
+					transition: all 0.3s ease-in-out;
+					background-color: rgba(0, 0, 0, 0.5);
+				}
 				img {
 					width: 100%;
 					display: block;
@@ -181,6 +202,18 @@
 					width: 100%;
 					display: block;
 				}
+				&:hover .hover-overlay {
+					display: block;
+					z-index: 200;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					opacity: 1;
+					transition: all 0.3s ease-in-out;
+					background-color: rgba(0, 0, 0, 0.5);
+				}
 				.plants-overlay3 {
 					position: absolute;
 					z-index: 200;
@@ -213,8 +246,32 @@
 				align-items: center;
 				position: relative;
 
+				&:hover .hover-overlay {
+					display: block;
+					z-index: 200;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					opacity: 1;
+					transition: all 0.3s ease-in-out;
+					background-color: rgba(0, 0, 0, 0.5);
+				}
+
+				&:hover .plants-overlay4 {
+					h3 {
+						color: $pink;
+
+					}
+					p {
+						color: $pink;
+					}
+				}
+
 				img {
 					width: 100%;
+					display: block;
 				}
 
 				.plants-overlay4 {
@@ -229,11 +286,14 @@
 						font-size: 1rem;
 						text-align: center;
 						margin: 0 auto;
+						color: black;
+						transition: all 0.3s ease-in-out;
 					}
 					p {
 						font-size: 0.8rem;
 						text-align: center;
 						margin: 0 auto;
+						transition: all 0.3s ease-in-out;
 					}
 				}
 			}

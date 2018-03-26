@@ -3,7 +3,7 @@
 	flex-direction: row;
 	width: 100%;
 	margin: 70px 0;
-	height: 80vh;
+	// height: 100vh;
 }
 
 .fullbleed-left {
@@ -13,6 +13,7 @@
 	width: 50%;
 	display: flex;
 	justify-content: center;
+
 	
 	.fullbleed-left-content {
 		max-width: 70%;
@@ -20,7 +21,8 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin: 20% 0;
+		margin: 140px 0;
+		// height: 100vh;
 
 		h2 {
 			margin: 0;
@@ -78,7 +80,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin: 50px 0;
+		margin: 180px 0;
 
 		img:first-child {
 			width: 25%;
