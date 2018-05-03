@@ -3,7 +3,6 @@
 	flex-direction: row;
 	width: 100%;
 	margin: 70px 0;
-	// height: 100vh;
 }
 
 .fullbleed-left {
@@ -22,7 +21,6 @@
 		justify-content: center;
 		align-items: center;
 		margin: 140px 0;
-		// height: 100vh;
 
 		h2 {
 			margin: 0;
@@ -47,22 +45,6 @@
 			margin: 0;
 
 		}
-		// .fullbleed-dots {
-		// 	display: flex;
-		// 	margin: 6% 0;
-		// 	.fb-dot {
-		// 		width: 20px;
-		// 		height: 20px;
-		// 		background: $grey;
-		// 		border-radius: 50px;
-		// 		margin: 0 2px;
-		// 	}
-		// 	.fb-dot:hover {
-		// 		width: 30px;
-		// 		height:30px;
-		// 		background: $grey;
-		// 	}
-		// }
 	}
 }
 

@@ -5,33 +5,14 @@
 }
 // /* Landscape phone to portrait tablet */
 @media (max-width: 900px) {
-
-	// .wrapper {
-	// 	width: 80%;
-	// }
-
-	.home .home-center {
-		margin: 30% 0 25% 0;
-
-		h2 {
-			// font-size: 1.3rem;
-		}
-		h1 {
-			// font-size: 2.2rem;
-		}
-		.home-button {
-			margin-top: 2%;
-			a {
-				// padding: 0.5rem 1.1rem;
-				// font-size: .6rem;
-				// border-radius: 2px;
-				&:hover {
-					background: white;
-					color: $pink;
-				}
-			}
-		}
+	#flyoutMenu {
+		width: 50%;
 	}
+
+	.home h1 {
+		margin: 50px auto;
+	}
+
 		.fullbleed {
 			display: flex;
 			flex-direction: column;
@@ -66,6 +47,10 @@
 
 // /* Landscape phones and down */
 @media (max-width: 640px) {
+
+	#flyoutMenu {
+		width: 100%;
+	}
 	.wrapper {
 		width: 90%;
 	}
@@ -111,6 +96,8 @@
 		}
 	}
 
+
+
 // PRODUCTS
 
 	.products .wrapper {
@@ -136,31 +123,25 @@
 
 		.plants-gallery-left {
 			width: 100%;
-			margin: 0 auto;
 			position: relative;
+			height: 240px;
+			// margin-bottom: 2rem;
+			margin: 0 auto 2rem auto;
 
 			img {
 				width: 100%;
 			}
 
 			.plants-overlay1 {
-				position: absolute;
-				// z-index: 900;
-				left: calc(33%);
-				top: calc(50% - 20px);
-				background: white;
-				padding: 2px 12px;
-				width: 40%;
+				width: 50%;
 				h3 {
 					font-weight: 400;
-					font-size: 14px;
+					font-size: 18px;
 					text-align: center;
-					margin: 0 auto;
 				}
 				p {
-					font-size: 10px;
+					font-size: 14px;
 					text-align: center;
-					margin: 0 auto;
 				}
 			}
 		}
@@ -186,59 +167,45 @@
 				.plants-gallery-right-top-left {
 					width: 100%;
 					position: relative;
-					&:first-child {
-						margin: 0 auto;
-					}
+					margin: 0 auto 2rem auto;
+
 					img {
 						width: 100%;
 						display: inline-block;
 					}
 					.plants-overlay2 {
-						position: absolute;
-						// z-index: 900;
-						left: calc(20%);
-						top: calc(50% - 20px);
-						background: white;
-						padding: 2px 12px;
-						width: 55%;
+						width: 50%;
+
 						h3 {
 							font-weight: 400;
-							font-size: 14px;
+							font-size: 18px;
 							text-align: center;
-							margin: 0 auto;
 						}
 						p {
-							font-size: 10px;
+							font-size: 14px;
 							text-align: center;
-							margin: 0 auto;
 						}
 					}
 				}
 				.plants-gallery-right-top-right {
 					width: 100%;
 					position: relative;
+					margin: 0 auto 2rem auto;
 					img {
 						width: 100%;
 						display: inline-block;
 					}
 					.plants-overlay3 {
-						position: absolute;
-						// z-index: 900;
-						left: calc(20%);
-						top: calc(50% - 20px);
-						background: white;
-						padding: 2px 12px;
-						width: 55%;
+						width: 50%;
+
 						h3 {
 							font-weight: 400;
-							font-size: 14px;
+							font-size: 18px;
 							text-align: center;
-							margin: 0 auto;
 						}
 						p {
-							font-size: 10px;
+							font-size: 14px;
 							text-align: center;
-							margin: 0 auto;
 						}
 					}
 				}
@@ -256,23 +223,16 @@
 					}
 
 					.plants-overlay4 {
-						position: absolute;
-						// z-index: 900;
-						left: calc(35.5%);
-						top: calc(50% - 20px);
-						background: white;
-						padding: 2px 0;
-						width: 30%;
+						width: 50%;
+
 						h3 {
 							font-weight: 400;
-							font-size: 14px;
+							font-size: 18px;
 							text-align: center;
-							margin: 0 auto;
 						}
 						p {
-							font-size: 10px;
+							font-size: 14px;
 							text-align: center;
-							margin: 0 auto;
 						}
 					}
 				}
@@ -400,10 +360,7 @@
 					&:last-child {
 						margin-right: 0;
 					}
-					// margin-right: 6px;
-					// &:last-child {
-					// 	margin-right: 0;
-					// }
+
 					img {
 						width: 45%;
 					}
@@ -413,15 +370,6 @@
 
 	}
 
-
-
-
-
-// FULLBLEED
-
-// .fullbleed-right .fullbleed-right-content {
-// 	margin: 30% 0;
-// }
 
 
 // BLOG
